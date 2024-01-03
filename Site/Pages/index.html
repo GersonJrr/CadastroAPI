@@ -10,8 +10,13 @@
 </head>
 <body>
     <div id="btn-add">
-        <h2 >Lista de Pessoas</h2>
+        <h2>Lista de Pessoas</h2>
         <button onclick="abrirTelaCreate()">Adicionar Pessoa</button>
+    </div>
+
+    <div id="meuBox" style="display: none;">
+        <iframe id="meuIFrame" src="create.html" width="100%" height="100%"></iframe>
+        <button onclick="fecharBox()">Cancelar</button>
     </div>
 
     <table>
@@ -24,14 +29,16 @@
                 <th>CPF</th>
                 <th>Ações</th>
             </tr>
-
         </thead>
 
         <tbody id="pessoa-lista">
-
+          
         </tbody>
     </table>
+
     <script src="../JS/Javascript.js"></script>
+    <script src="../JS/create.js"></script>
     <script src="../JS/Delete.js"></script>
+    
 </body>
 </html>

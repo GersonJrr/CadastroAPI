@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/editar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Editar Pessoa</title>
+</head>
+<body>
+    <h2>Editar Pessoa</h2>
+
+    <form id="editForm">
+        <label for="primeiroNome">Primeiro Nome:</label>
+        <input type="text" id="primeiroNome" name="primeiroNome" placeholder="Digite aqui" required>
+
+        <label for="nomeMeio">Nome do Meio:</label>
+        <input type="text" id="nomeMeio" name="nomeMeio" placeholder="Digite aqui">
+
+        <label for="ultimoNome">Último Nome:</label>
+        <input type="text" id="ultimoNome" name="ultimoNome"  placeholder="Digite aqui" required>
+
+        <label for="CPF">CPF:</label>
+        <input type="text" id="CPF" name="CPF" placeholder="Digite aqui" required>
+    </form>
+    <div>
+        <button type="button" onclick="editar()">Salvar</button>
+    </div>
+
+    <script src="../JS/editar.js"></script>
+</body>
+</html>
