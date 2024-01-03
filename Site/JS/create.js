@@ -12,7 +12,7 @@ function createPessoa(){
     }
 
 
-    fetch("https://localhost:7228/api/Pessoa/Create",{
+    fetch("https://localhost:7091/api/Pessoa/create",{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'
@@ -23,6 +23,20 @@ function createPessoa(){
             alert("ERRO AO CRIAR PESSOA!")
         }
         alert("pessoa criada com sucesso!")
-        window.location.href = "index.html";
+        window.location.reload();
+        
     })
+    
 }
+function abrirTelaCreate() {
+    const criarIframe = document.getElementById('meuBox');
+    criarIframe.src = 'create.html';
+    document.getElementById('meuBox').style.display = 'block';
+    
+}
+
+function fecharBox() {
+    document.getElementById('meuBox').style.display = 'none';
+    window.location.reload();
+}
+
